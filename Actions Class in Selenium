@@ -1,0 +1,29 @@
+Actions class is an ability provided by Selenium for handling keyboard and mouse events. 
+
+Right Click: action.moveToElement(titleElement).contextClick().build().perform();
+  
+		//moves the mouse pointer to the element and clicks in the centre.
+		action.moveToElement(sliderElement).click().build().perform();
+    
+		//moves the mouse pointer to the element at the centre then moves it by 50 on x axis and clicks.
+		action.moveToElement(sliderElement, 50, 0).click().build().perform();
+		
+		//moves the mouse pointer to the element at the centre then Clicksandhold and moves it by 90 on x axis and clicks.
+		action.moveToElement(sliderElement).clickAndHold().dragAndDropBy(sliderElement, 90, 0).build().perform();
+    
+     Mouse Actions in Selenium:
+doubleClick(): Performs double click on the element
+clickAndHold(): Performs long click on the mouse without releasing it
+dragAndDrop(): Drags the element from one point and drops to another
+moveToElement(): Shifts the mouse pointer to the center of the element
+contextClick(): Performs right-click on the mouse
+
+
+Keyboard Actions in Selenium:
+
+sendKeys(): Sends a series of keys to the element
+keyUp(): Performs key release
+keyDown(): Performs keypress without release
+
+action.moveToElement(textBoxElement).click().keyDown(Keys.SHIFT).sendKeys("hi my name is himanshu").keyUp(Keys.SHIFT).sendKeys("sachdeva").build().perform();
+		
