@@ -1,0 +1,4 @@
+What is Select Class in Selenium?
+In HTML, the dropdowns are generally implemented either using the <select> tag or the <input> tag. To perform certain operations on the dropdowns,
+which are declared using the <select> HTML tag, Selenium WebDrivers provides a class called “Select ” class.
+
