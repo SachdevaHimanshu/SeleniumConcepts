@@ -26,4 +26,11 @@ keyUp(): Performs key release
 keyDown(): Performs keypress without release
 
 action.moveToElement(textBoxElement).click().keyDown(Keys.SHIFT).sendKeys("hi my name is himanshu").keyUp(Keys.SHIFT).sendKeys("sachdeva").build().perform();
+
+Action action = actions.build();
+
+Notice that the build method returns the object type of Action. It is basically representing Composite Action which we built from a sequence of multiple actions. 
+
+refer: https://www.selenium.dev/selenium/docs/api/java/org/openqa/selenium/interactions/Actions.html
+
 		
